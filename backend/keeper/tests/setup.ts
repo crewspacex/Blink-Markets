@@ -1,0 +1,29 @@
+/// <reference types="jest" />
+
+// Test environment setup
+process.env.SUI_NETWORK = 'testnet';
+process.env.SUI_RPC_URL = 'https://fullnode.testnet.sui.io:443';
+process.env.PACKAGE_ID = '0x0000000000000000000000000000000000000000000000000000000000000001';
+process.env.PYTH_PACKAGE_ID = '0x95600d40bc2dfdf934da7f2a4f0f2e8af6e7406b5558f6dd772034eb17f9f2aa';
+process.env.PYTH_STATE_ID = '0x1fc4aaf3cf612d8f7eba1660614dc4b5825f355ff1ca1f3bcf4cf7b9c95c9f43';
+process.env.WORMHOLE_STATE_ID = '0x31358d198147da50db32eda2562951d53973a0c0ad5ed738e9b17d88b213d790';
+process.env.MARKET_ID = '0x0000000000000000000000000000000000000000000000000000000000000004';
+process.env.ORACLE_PRIVATE_KEY = 'suiprivkey1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq';
+process.env.ORACLE_ADDRESS = '0x0000000000000000000000000000000000000000000000000000000000000005';
+process.env.PYTH_HERMES_URL = 'https://hermes.pyth.network';
+process.env.PYTH_FEED_SUI_USD = '0x50c67b3f0a9bf5f93d10887c5f60ca6f50d46e26b8e1728bd7708a9bf0f6f7d0';
+process.env.REDIS_HOST = 'localhost';
+process.env.REDIS_PORT = '6379';
+process.env.REDIS_PASSWORD = '';
+process.env.REDIS_DB = '0';
+process.env.POLLING_INTERVAL_MS = '3000';
+process.env.BATCH_WINDOW_MS = '5000';
+process.env.MAX_BATCH_SIZE = '10';
+process.env.RESOLUTION_LOCK_TTL_SEC = '30';
+process.env.GAS_BUDGET = '100000000';
+process.env.MAX_GAS_PRICE = '1000';
+process.env.PROMETHEUS_PORT = '9090';
+process.env.LOG_LEVEL = 'error';
+process.env.MAX_RETRIES = '3';
+process.env.RETRY_DELAY_MS = '1000';
+process.env.ORACLE_TIMEOUT_MS = '10000';
